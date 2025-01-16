@@ -12,7 +12,6 @@ import { NotFound } from "./NotFound";
 
 import { Home } from "./Home";
 import { ToDoAppPage } from "./ToDoAppPage";
-import { MicroFrontendTwoPage } from "./MicroFrontendTwoPage";
 import { Login } from "./Login";
 
 export const AppRoot: FunctionComponent = (): ReactElement => {
@@ -65,10 +64,6 @@ export const AppRoot: FunctionComponent = (): ReactElement => {
               <Route element={<ProtectedRoute />}>
                 <Route index element={<Home />} />
                 <Route path="to-do-app/*" element={<ToDoAppPage />} />
-                <Route
-                  path="subrouting-example/*"
-                  element={<MicroFrontendTwoPage />}
-                />
               </Route>
               <Route path="login" element={<Login />} />
               <Route path="*" element={<NotFound />} />

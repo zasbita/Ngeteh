@@ -55,8 +55,6 @@ module.exports = {
       name: "parent",
       remotes: {
         toDoApp: "mfe_todo_app@http://localhost:3081/remoteEntry.js",
-        subRoutingExample:
-          "mfe_subrouting@http://localhost:3082/remoteEntry.js",
       },
       shared: {
         ...deps,
